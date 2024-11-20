@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Language Switcher",
+  "version": "1.0",
+  "description": "Switch between multiple languages by replacing the language code in the URL.",
+  "permissions": ["activeTab", "tabs", "webNavigation", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Switch Language"
+  },
+  "icons": {
+    "48": "icons/icon.png",
+    "16": "icons/icon.png"
+
+  },
+  "author": "hiddenblue"
+}

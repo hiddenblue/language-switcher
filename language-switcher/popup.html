@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Switcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .light-theme {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .dark-theme {
+      background-color: #333;
+      color: #f9f9f9;
+    }
+    select {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .theme-toggle {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .theme-toggle label {
+      margin-right: 10px;
+    }
+    .theme-toggle input[type="radio"] {
+      margin-right: 5px;
+    }
+    .about {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body class="light-theme">
+  <div class="theme-toggle">
+    <label>
+      <input type="radio" name="theme" value="light" checked> Light Theme
+    </label>
+    <label>
+      <input type="radio" name="theme" value="dark"> Dark Theme
+    </label>
+  </div>
+  <label for="languageSelect1">Select Language 1:</label>
+  <select id="languageSelect1">
+    <option value="en-us">English (US)</option>
+    <option value="en-gb">English (GB)</option>
+    <option value="en-au">English (AU)</option>
+    <option value="en-ca">English (CA)</option>
+    <option value="en-in">English (IN)</option>
+    <option value="en-za">English (ZA)</option>
+    <option value="es-es">Spanish (ES)</option>
+    <option value="es-mx">Spanish (MX)</option>
+    <option value="fr-fr">French (FR)</option>
+    <option value="fr-ca">French (CA)</option>
+    <option value="de-de">German (DE)</option>
+    <option value="de-ch">German (CH)</option>
+    <option value="it-it">Italian (IT)</option>
+    <option value="pt-pt">Portuguese (PT)</option>
+    <option value="pt-br">Portuguese (BR)</option>
+    <option value="zh-cn">Chinese (CN)</option>
+    <option value="zh-tw">Chinese (TW)</option>
+    <option value="ja-jp">Japanese (JP)</option>
+  </select>
+  <button id="switchCurrent1">Switch Current Tab</button>
+  <button id="switchNewTab1">Open in New Tab</button>
+  <label for="languageSelect2">Select Language 2:</label>
+  <select id="languageSelect2">
+    <option value="en-us">English (US)</option>
+    <option value="en-gb">English (GB)</option>
+    <option value="en-au">English (AU)</option>
+    <option value="en-ca">English (CA)</option>
+    <option value="en-in">English (IN)</option>
+    <option value="en-za">English (ZA)</option>
+    <option value="es-es">Spanish (ES)</option>
+    <option value="es-mx">Spanish (MX)</option>
+    <option value="fr-fr">French (FR)</option>
+    <option value="fr-ca">French (CA)</option>
+    <option value="de-de">German (DE)</option>
+    <option value="de-ch">German (CH)</option>
+    <option value="it-it">Italian (IT)</option>
+    <option value="pt-pt">Portuguese (PT)</option>
+    <option value="pt-br">Portuguese (BR)</option>
+    <option value="zh-cn">Chinese (CN)</option>
+    <option value="zh-tw">Chinese (TW)</option>
+    <option value="ja-jp">Japanese (JP)</option>
+  </select>
+  <button id="switchCurrent2">Switch Current Tab</button>
+  <button id="switchNewTab2">Open in New Tab</button>
+  <div class="about">
+    <h3>About</h3>
+    <p>Author: hiddenblue</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
